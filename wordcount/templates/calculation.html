@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<p>결과화면 입니다.</p>
+<form>
+    <br>
+    <p>암호화전 문장입니다.</p>
+    {{fulltext}}
+    <br>
+    <br>
+    <p>암호화후 문장입니다.</p>
+    {{remeber}}
+    <br>
+    <br>
+    <p>문장에 들어 있는 알파벳 빈도수입니다.</p>
+    {% for word, countTotal in countAlphabet %}
+    {{ word }} - {{ countTotal }}
+    <br>
+    {% endfor %}
+    <br>
+    <a href="{% url 'wordcount' %}"> 다시하기 </a>
+    <br>
+    <a href="{% url 'home' %}"> 돌아가기 </a>
+</form>
+{% endblock %}

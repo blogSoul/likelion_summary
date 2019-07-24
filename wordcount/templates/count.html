@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<p>카이사르 암호 설명입니다.</p>
+<form>
+    <br>
+    <p>카이사르 암호(Caesar cipher) 또는 시저 암호는 암호학에서 다루는 간단한 치환암호의 일종이다. 암호화하고자 하는 내용을 알파벳별로 일정한 거리만큼 밀어서 다른 알파벳으로 치환하는 방식이다. 예를 들어 3글자씩 밀어내는 카이사르 암호로 'COME TO ROME'을 암호화하면 'FRPH WR URPH'가 된다.</p>
+    <a href="https://ko.wikipedia.org/wiki/%EC%B9%B4%EC%9D%B4%EC%82%AC%EB%A5%B4_%EC%95%94%ED%98%B8">참고사이트 가기</a>
+    <br>
+    <a href="{% url 'wordcount' %}"> 암호 작동시켜보기 </a>
+    <br>
+    <a href="{% url 'home' %}"> 돌아가기 </a>
+</form>
+{% endblock %}
