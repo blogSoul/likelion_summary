@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>보람보람</title>
+	<title>보람보람 {% block title %}{% endblock %}</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
@@ -140,8 +140,8 @@
 				<div class="menu-nav">
 					<span class="menu-header">Menu <i class="fa fa-bars"></i></span>
 					<ul class="menu-list">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Shop</a></li>
+						<li><a href="{% url 'photo:photo_list' %}">Home</a></li>
+						<li><a href="{% url 'shop:product_all' %}">Shop</a></li>
 						<li><a href="#">Designer</a></li>
 					</ul>
 				</div>
@@ -158,6 +158,8 @@
 		<div class="container">
 			<!-- row -->
 			<div class="row">
+				{% block content %}
+                {% endblock %}
 			</div>
 			<!-- /row -->
 		</div>
