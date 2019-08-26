@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e17f1029-e9c1-48af-aacc-b7d144803825" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/projbstagram/profiles/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projbstagram/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/projbstagram/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projbstagram/projbstagram/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/projbstagram/projbstagram/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projbstagram/projbstagram/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/projbstagram/projbstagram/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projbstagram/templates/bases.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projbstagram/profiles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/projbstagram/profiles/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projbstagram/profiles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/projbstagram/profiles/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projbstagram/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/projbstagram/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
