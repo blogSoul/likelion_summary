@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load staticfiles %}
+<br>
+<!doctype html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Album example · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Phote for Me</h1>
+      <p class="lead text-muted">It was a bit difficult and difficult but rewarding activity.</p>
+      <p>
+        <a href="{% url 'home' %}" class="btn btn-primary my-2">Back to Home</a>
+        <a href="#" class="btn btn-secondary my-2">추가하기</a>
+      </p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{% static 'cat.png' %}" alt="">
+            <div class="card-body">
+              <p class="card-text">This picture is a cat picture.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{% static '코딩.png' %}" alt="">
+            <div class="card-body">
+              <p class="card-text">I want to be a computer programmer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{% static 'cat.png' %}" alt="">
+            <div class="card-body">
+              <p class="card-text">I have been playing the piano for two years.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+	  {% for portfolio in portfolios.all %}
+	    <div class="col-md-4">
+	      <div class="card mb-4 shadow-sm">
+	        <img class="card-img-top" src="{{ portfolio.image.url }}" alt=" Card image cap">
+	        <div class="card-body">
+	          <h4>{{ portfolio.title }}</h4>
+	          <p class="card-text">{{ portfolio.description }}</p>
+	        </div>
+	      </div>
+	    </div>
+    {% endfor %}
+
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="{% url 'home' %}">돌아가기</a>
+    </p>
+    <p>This Album is &copy; Bootstrap, but please download and customize it for yourself!</p>
+  </div>
+</footer>
+  </body>
+</html>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<p>카이사르 암호 작동 시연입니다.</p>
+
+<form action="{% url 'calculation' %}">
+    <br>
+    <p>암호화하고싶은 문장을 입력하세요.</p>
+    <p>(영어로 입력하셔야 합니다.)</p>
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+    <br>
+    <p>얼마나 이동하고 싶은지 입력하세요.</p>
+    <p>(양수면 앞으로 이동하고 음수면 뒤로 이동합니다.)</p>
+    <textarea cols="10" rows="1" name="text"></textarea>
+    <input type="submit" value="Calculation">
+    <br>
+</form>
+<br>
+<a href="{% url 'count' %}"> 카이사르 암호 코드설명 </a>
+<br>
+<a href="{% url 'home' %}"> 돌아가기 </a>
+{% endblock %}
