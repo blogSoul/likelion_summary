@@ -1,2 +1,3 @@
-# likelion_summary
-Organize the codes I learned in Likelion Circles
+# 🦁 Likelion_summary
+
+2019-04 ~ 2019-12에 활동했던 "멋쟁이사자처럼" 동아리에서 배운 코드들과 프로젝트를 정리하는 공간입니다.  
