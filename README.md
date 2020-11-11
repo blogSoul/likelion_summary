@@ -3,6 +3,8 @@
 2019년 멋쟁이사자처럼에서 배웠던 모든 내용을 정리했습니다.  
 2020-11-12 시점으로 likelion_summary에 있는 repository들은 앞으로 개발을 할 예정이 없으므로, merge한 모든 repository들의 commit 기록들을 likelion_summary repository에 합쳐뒀습니다.  
 
+<span style="font: futura; font-size:16px;">* 2019년 sejong-likelion 7기 group link : [Go to Link](https://github.com/sejong-likelion)</span>
+
 <span style="font: futura; font-size:16px;">* merge한 모든 repository들은 2020-11-12일부로 전부 __삭제__ 하였습니다!</span>
 
 ## 💪 Likelion에서 진행한 프로젝트 및 과제 
