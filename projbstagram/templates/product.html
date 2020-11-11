@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>모그리면돼?</title>
+
+    <style>
+        .add-to-heart {
+          margin: 0px 10px;
+          border-radius:10px;
+          width: 95%;
+          border: 2px solid #9114fc;
+          background-color: #FFF;
+          color: #9114fc;
+        }
+
+        .add-to-choice {
+          margin: 0px 10px;
+          border-radius:10px;
+          width: 95%;
+          height: 60px;
+        }
+    </style>
+	{% include 'include/main_head.html' %}
+</head>
+
+<body>
+	{% include 'include/main_header_nav_fix.html' %}
+
+	<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /section -->
+
+	<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!--  Product Details -->
+				<div class="product product-details clearfix">
+					<div class="col-md-6">
+						<div id="product-main-view">
+							<div class="product-view">
+								<img src="/static/mo/img/main-product01.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="product-body">
+							<br>
+							<div class="product-label">
+								<span>캐릭터 일러스트</span>
+							</div>
+							<h2 class="product-name">남녀 누워있는 모습 그려주세요ㅜㅜ</h2>
+							<br><br>
+							<h4><strong>상세 설명</strong></h4>
+							<p>남자는 베개를 베고 침대에 누워있고 그 위로 여자가 있어요..<br>
+								둘이 서로를 쳐다보고 있고 입술이 닿을 듯한 모습을 연출하고 싶어요!<br>
+								남자의 왼쪽 손이 여자의 머리를 감싸듯이 하면 좋을 것 같아요<br>
+								***여자 단발머리*** 중요합니다! 잘 부탁드려요ㅜㅜㅜ
+							</p>
+							<br>
+							<div class="product-btns">
+								<button class="primary-btn add-to-heart"><i class="fa fa-heart"></i> &nbsp;&nbsp; 찜하기 </button>
+								<p></p>
+								<button class="primary-btn add-to-choice"><i class="fa fa-check"></i> &nbsp;&nbsp; 참여하기 </button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Product Details -->
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /section -->
+
+
+	{% include 'include/main_footer.html' %}
+	{% include 'include/main_scripts.html' %}
+</body>
+
+</html>
